@@ -8,7 +8,7 @@ import BookingProfile from "./Components/bookingpage/BookingProfile";
 import { useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import Startup from "./Startup";
-
+import Mybookings from "./Components/bookingpage/Mybookings";
 
 function App() {
   const Loginstate = useSelector((state) => state.loginstatus.LoginStatus);
@@ -22,6 +22,7 @@ function App() {
             <Routes>
               <Route element={<Login />} path="/"></Route>
               <Route element={<Register />} path="/Register"></Route>
+              <Route element={<Mybookings />} path="/Mybookings"></Route>
             </Routes>
           </>
         )}

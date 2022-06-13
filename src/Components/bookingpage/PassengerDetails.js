@@ -1,8 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { loginstatusactions } from "../../Store/LoginStatus-slice";
 import "./PassengerDetails.css";
 
 export default function PassengerDetails(props) {
+  const dispatch = useDispatch();
   const allbookingdata = props.items2;
   let totalpassengers = Array.from(Array(allbookingdata.totaltickets - 1));
 
@@ -97,6 +101,7 @@ export default function PassengerDetails(props) {
         localStorage.setItem("buslist", JSON.stringify(updateddata));
       }
       props.items();
+      dispatch(loginstatusactions.openmybookings());
       toast.success("Booking Successful");
     }
   };

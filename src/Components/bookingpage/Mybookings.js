@@ -79,14 +79,24 @@ export default function Mybookings() {
                       <h4>Bus Details: {elem.busdetails.busname}</h4>
                       <h4>Phone No: {elem.mainpassengerdata.phoneno}</h4>
                       <h4>Email: {elem.mainpassengerdata.email}</h4>
-                      <button
-                        className="cancel-ticket-btn"
-                        onClick={() => {
-                          cancelbookinghandler(elem); // elem?.bookid
-                        }}
-                      >
-                        Cancel
-                      </button>
+                      <div>
+                        <button
+                          className="cancel-ticket-btn"
+                          onClick={() => {
+                            cancelbookinghandler(elem);
+                          }}
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          className="print-ticket-btn"
+                          onClick={() => {
+                            window.print();
+                          }}
+                        >
+                          Print
+                        </button>
+                      </div>
                     </div>
                     <div className="main-heading-2">
                       <h3>Passenger Details:</h3>

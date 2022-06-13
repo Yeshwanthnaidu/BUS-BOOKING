@@ -1,0 +1,126 @@
+.select-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5px;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  transition: 300ms;
+}
+
+.select-avail {
+  display: flex;
+  justify-content: center;
+  color: rgb(19, 19, 19);
+}
+
+.select-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decrement,
+.increment {
+  padding: 0px 10px;
+  border-radius: 150px;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+}
+
+.decrement:hover,
+.increment:hover {
+  background: linear-gradient(
+    92.83deg,
+    rgb(255, 116, 38) 0%,
+    rgb(249, 58, 19) 100%
+  );
+  transition: 300ms;
+}
+
+.input-box {
+  width: 13%;
+  padding: 10px;
+  text-align: center;
+}
+
+.select-total {
+  display: flex;
+  justify-content: center;
+  color: rgb(19, 19, 19);
+}
+
+.book-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.button-25 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 45%;
+  margin-left: 25px;
+}
+
+.button-25:hover,
+.button-25:active {
+  background-color: #fe7d78;
+  background-position: 0 0;
+  color: #2f2f2f;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+.book-btn-cancel {
+  background: #343434;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 45%;
+  margin-left: 25px;
+}

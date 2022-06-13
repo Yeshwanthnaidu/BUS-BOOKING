@@ -1,0 +1,134 @@
+.mainest {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.main-container-mybooking {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main-heading-001 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-ticket-btn-01 {
+  width: 2.5%;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgb(181, 0, 0);
+  color: white;
+  height: 50%;
+}
+
+.cancel-ticket-btn-01:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+.sub-container-mybooking {
+  background-color: aliceblue;
+  width: 80%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.total-header {
+  border-bottom: 2px solid grey;
+}
+
+.main-heading-mybooking {
+  font-family: sans-serif;
+  color: rgb(151, 0, 0);
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding: 20px;
+}
+
+.mybooking-header-1 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.mybooking-header-2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-details-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.main-heading-2 {
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.p-details {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.p-details-header {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.single-journey {
+  background-color: rgba(128, 128, 128, 0.274);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cancel-ticket-btn {
+  width: 50%;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgb(179, 0, 0);
+  color: white;
+}
+
+.cancel-ticket-btn:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+.error-msg {
+  color: red;
+}

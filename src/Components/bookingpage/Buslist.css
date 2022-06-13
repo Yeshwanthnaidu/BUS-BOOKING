@@ -1,0 +1,120 @@
+.main-container-1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.container-0 {
+  background-color: rgba(0, 0, 0, 0.847);
+  display: grid;
+  border-radius: 15px;
+  padding: 5px;
+  width: 80%;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  border-radius: 15px;
+}
+
+.timings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.start-time,
+.darr,
+.end-time {
+  padding: 10px;
+}
+
+.bus-details {
+  padding: 0px 20px;
+  padding-right: 40px;
+}
+
+.bus-name {
+  padding: 35px 10px 10px 10px;
+}
+
+.bus-type {
+  padding: 10px;
+}
+
+.seats-available {
+  padding: 35px 10px 10px 10px;
+  color: rgb(203, 203, 203);
+}
+
+.travel-distance {
+  padding-top: 30px;
+}
+
+.ticket-price {
+  padding: 0px 30px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.price-ti {
+  padding: 20px;
+}
+
+.button-24 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+.error-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.error-msg {
+  color: rgb(255, 48, 48);
+  text-align: center;
+  padding: 10px;
+  background-color: beige;
+  font-size: 25px;
+  font-family: sans-serif;
+  border-radius: 20px;
+}

@@ -1,0 +1,189 @@
+.main-container-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.passenger-details-main {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.info-1 {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.greet {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  padding: 16px;
+  color: rgb(192, 0, 0);
+  font-size: 25px;
+}
+
+.head-pd {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.passenger-container {
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  font-family: sans-serif;
+  width: 80%;
+  padding: 0px 10px;
+  color: black;
+}
+
+.passenger-ind {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 0px 0px 10px 20px;
+  background-color: rgb(204, 203, 203);
+  border-radius: 10px;
+}
+
+.passenger-ind-1 {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+  margin-top: 10px;
+}
+
+.Name-inp {
+  padding: 5px;
+  width: 90%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  outline: 0;
+}
+
+.age-inp-box {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.age-inp {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  background-color: #191919;
+  color: white;
+  padding: 12px;
+  width: 50%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.select-inp-box {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.select-gender {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  background-color: #191919;
+  color: white;
+  padding: 12px;
+  width: 90%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.button-786 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin: 30px;
+  margin-top: 40px;
+  float: right;
+}
+
+.button-786:hover,
+.button-786:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.button-786:active {
+  opacity: 0.5;
+}
+
+.final-book-btns {
+  margin: 0px;
+  padding: 0px;
+}
+
+.button-786:disabled {
+  background: grey;
+  border: 1px solid grey;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: not-allowed;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin: 30px;
+  margin-top: 40px;
+  float: right;
+}

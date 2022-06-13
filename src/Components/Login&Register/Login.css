@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../../wp9185491_1.jpg), linear-gradient(black, black);
+  height: 100vh;
+  background: fixed;
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(39, 39, 39, 0.8);
+  width: 35%;
+  border-radius: 20px;
+}
+
+.container {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.username {
+  font-size: 25px;
+}
+
+.username-login {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 20px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  margin-top: 8px;
+}
+
+.password {
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.password-login {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 20px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  margin-top: 8px;
+}
+
+.login-login {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+  margin-top: 30px;
+}
+
+.login-login:hover {
+  box-shadow: rgba(253, 76, 0) 0 3px 8px;
+}
+
+.new-acc {
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+  padding-top: 20px;
+}

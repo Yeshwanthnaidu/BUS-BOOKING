@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useMemo, useState } from "react";
+import { Fragment } from "react";
+import Login from "./Components/Login&Register/Login";
+import Register from "./Components/Login&Register/Register";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Components/Login&Register/Header";
+import BookingProfile from "./Components/bookingpage/BookingProfile";
+import { useSelector } from "react-redux";
+import { toast, ToastContainer } from "react-toastify";
+import Startup from "./Startup";
+
 
 function App() {
+  const Loginstate = useSelector((state) => state.loginstatus.LoginStatus);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Fragment>
+        <Header />
+        {!Loginstate && (
+          <>
+            <Routes>
+              <Route element={<Login />} path="/"></Route>
+              <Route element={<Register />} path="/Register"></Route>
+            </Routes>
+          </>
+        )}
+        {Loginstate && <BookingProfile />}
+      </Fragment>
+      <ToastContainer
+        position="top-center"
+        autoClose={1800}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    </BrowserRouter>
   );
 }
 
